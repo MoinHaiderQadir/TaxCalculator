@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false); // Dark mode state
+  // Dark mode state
   const [isOpen, setIsOpen] = useState(false); // Mobile menu open state
 
   // Handle the theme toggle between light and dark
-  const handleThemeToggle = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle("dark", !isDarkMode);
-  };
+ 
 
   return (
     <nav className="bg-base-300 dark:bg-gray-900 fixed w-full top-0 z-50 shadow-md transition-colors duration-300">
