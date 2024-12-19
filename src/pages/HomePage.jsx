@@ -23,9 +23,9 @@ const HomePage = () => {
               Calculate your income tax based on your salary. Click the button below to get started.
             </p>
             {/* Buttons Container */}
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
-                className="bg-neutral text-neutral-content w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
+                className="bg-neutral text-neutral-content w-full sm:w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
                 onClick={() => navigate("/info/salary")}
               >
                 Info
@@ -52,9 +52,9 @@ const HomePage = () => {
             <p className="text-gray-900 mb-6 hover:text-blue-700 text-justify">
               Calculate your income tax based on your business. Click the button below to get started.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
-                className="bg-neutral text-neutral-content w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
+                className="bg-neutral text-neutral-content w-full sm:w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
                 onClick={() => navigate("/info/business")}
               >
                 Info
@@ -81,9 +81,9 @@ const HomePage = () => {
             <p className="text-gray-900 mb-6 hover:text-blue-700 text-justify">
               Calculate your income tax based on your property tax. Click the button below to get started.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
-                className="bg-neutral text-neutral-content w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
+                className="bg-neutral text-neutral-content w-full sm:w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
                 onClick={() => navigate("/info/property")}
               >
                 Info
@@ -98,21 +98,22 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Income From Capital Gain Card */}
+
+
         <div className="w-full bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-700 hover:border-blue-900 hover:text-blue-800">
           <img
             src="./Images/incg.png"
-            alt="Income from Capital Gain"
+            alt="Income from Property"
             className="w-full h-48 object-cover border-4 border-white rounded-lg"
           />
           <div className="p-6">
-            <h2 className="text-xl font-bold mb-4">Income From Capital Gain</h2>
+            <h2 className="text-xl font-bold mb-4">Income from Capital Gain</h2>
             <p className="text-gray-900 mb-6 hover:text-blue-700 text-justify">
-              Calculate your income tax based on your capital gain. Click the button below to get started.
+              Calculate your income tax based on your capital gain tax. Click the button below to get started.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
-                className="bg-neutral text-neutral-content w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
+                className="bg-neutral text-neutral-content w-full sm:w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
                 onClick={() => navigate("/info/capital-gain")}
               >
                 Info
@@ -127,21 +128,23 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Income From Other Sources Card */}
+
+
+
         <div className="w-full bg-white shadow-lg rounded-lg overflow-hidden border-2 border-gray-700 hover:border-blue-900 hover:text-blue-800">
           <img
             src="./Images/inss.png"
-            alt="Income from Other Sources"
+            alt="Income from Othersources"
             className="w-full h-48 object-cover border-4 border-white rounded-lg"
           />
           <div className="p-6">
-            <h2 className="text-xl font-bold mb-4">Income From Other Sources</h2>
+            <h2 className="text-xl font-bold mb-4">Income from Other Sources</h2>
             <p className="text-gray-900 mb-6 hover:text-blue-700 text-justify">
-              Calculate your income tax based on your other sources. Click the button below to get started.
+              Calculate your income tax based on your other sources tax. Click the button below to get started.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button
-                className="bg-neutral text-neutral-content w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
+                className="bg-neutral text-neutral-content w-full sm:w-14 h-10 border-2 border-blue-500 hover:bg-blue-500 hover:text-white hover:border-blue-800 rounded-full flex items-center justify-center text-sm font-semibold"
                 onClick={() => navigate("/info/other-sources")}
               >
                 Info
@@ -150,11 +153,13 @@ const HomePage = () => {
                 className="bg-white border-2 hover:bg-blue-500 hover:text-white hover:border-blue-800 text-black font-semibold py-2 px-3 rounded-full w-full transition-transform duration-300 ease-in-out hover:scale-105"
                 onClick={() => navigate("/income-othersources")}
               >
-                Explore your Other So. Tax
+                Explore your Other Sour. Tax
               </button>
             </div>
           </div>
         </div>
+
+       
       </div>
     </div>
   );
